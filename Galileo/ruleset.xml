@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>
+        Galileo Coding standard pro projekt GCM2. Vychází z coding standardů Escapestudios a Slevomatu.
+    </description>
+
+    <rule ref="Symfony">
+        <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterFirst" />
+        <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterSecond" />
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
+        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
+    </rule>
+
+    <rule ref="Symfony">
+        <exclude name ="Squiz.Strings.ConcatenationSpacing" />
+        <exclude name ="Symfony.Functions.Arguments.Invalid" />
+    </rule>
+
+    <rule ref="Symfony.ControlStructure.YodaConditions.Invalid">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="Symfony.ControlStructure.IdenticalComparison.Warning">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="Symfony.Commenting.FunctionComment.Missing">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="PSR1.Methods.CamelCapsMethodName.NotCamelCaps">
+        <type>warning</type>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter">
+        <type>warning</type>
+    </rule>
+
+    <!--    <rule ref="PSR12">-->
+    <!--        <exclude name="PSR12.Properties.ConstantVisibility" />-->
+    <!--    </rule>-->
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="120"/>
+        </properties>
+    </rule>
+
+    <!--    <rule ref="PSR12">-->
+    <!--        <exclude name="PSR12.Properties.ConstantVisibility" />-->
+    <!--    </rule>-->
+
+    <rule ref="Zend.NamingConventions.ValidVariableName.NotCamelCaps">
+        <severity>3</severity>
+    </rule>
+
+    <rule ref="Zend.NamingConventions.ValidVariableName.MemberVarNotCamelCaps">
+        <severity>3</severity>
+    </rule>
+
+    <!--    Takes very long time to run -->
+    <!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">-->
+    <!--        <properties>-->
+    <!--            <property name="searchAnnotations" type="boolean" value="true"/>-->
+    <!--        </properties>-->
+    <!--    </rule>-->
+
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias" />
+
+    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch" />
+
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma" />
+    <!-- <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
+        <properties>
+            <property name="linesCountBeforeFirstUse" value="0"/>
+            <property name="linesCountBetweenUses" value="0"/>
+            <property name="linesCountAfterLastUse" value="1"/>
+        </properties>
+    </rule> -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition" />
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty">
+        <severity>3</severity>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses" />
+    <!-- <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison" /> -->
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
+        <properties>
+            <property name="linesCountBeforeControlStructure" value="1"/>
+            <property name="linesCountBeforeFirstControlStructure" value="0"/>
+            <property name="linesCountAfterControlStructure" value="1"/>
+            <property name="linesCountAfterLastControlStructure" value="0"/>
+            <property name="tokensToCheck" type="array">
+                <element value="T_IF" />
+                <element value="T_DO" />
+                <element value="T_WHILE" />
+                <element value="T_FOR" />
+                <element value="T_FOREACH" />
+                <element value="T_SWITCH" />
+                <element value="T_TRY" />
+                <!--                <element value="T_CASE" />-->
+                <element value="T_DEFAULT" />
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
+        <properties>
+            <property name="allowSingleLineYieldStacking" value="true"/>
+            <property name="linesCountBeforeControlStructure" value="1"/>
+            <property name="linesCountBeforeFirstControlStructure" value="0"/>
+            <property name="linesCountAfterControlStructure" value="1"/>
+            <property name="linesCountAfterLastControlStructure" value="0"/>
+            <property name="tokensToCheck" type="array">
+                <element value="T_GOTO" />
+                <!--                <element value="T_BREAK" />-->
+                <element value="T_CONTINUE" />
+                <element value="T_RETURN" />
+                <element value="T_THROW" />
+                <element value="T_YIELD" />
+                <element value="T_YIELD_FROM" />
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile" />
+
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration" />
+
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing">
+        <properties>
+            <property name="linesCountBeforeNamespace" value="1"/>
+            <property name="linesCountAfterNamespace" value="1"/>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon" />
+
+    <rule ref="SlevomatCodingStandard.PHP.ShortList" />
+
+    <rule ref="SlevomatCodingStandard.PHP.TypeCast" />
+
+    <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc" />
+
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses" />
+
+    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable" />
+
+    <!-- NOTE: We want this in the long term, but there are still some cases to rewrite first. -->
+    <!-- <rule ref="SlevomatCodingStandard.PHP.DisallowReference" /> -->
+    <!-- NOTE: Works fine for PHPStan, but not for Serenata, as it doesn't support parsing assertions yet. -->
+    <!-- <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion" /> -->
+    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing">
+        <properties>
+            <property name="spacesCountAfterReference" value="0"/>
+        </properties>
+    </rule>
+    <!--    > PHP 7.1 -->
+    <!--    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" />-->
+
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints" />
+
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
+
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue" />
+
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing" />
+    <!--    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing" />-->
+
+    <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse" />
+
+    <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine" />
+    <!-- Takes long time to run -->
+    <!--    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">-->
+    <!--        <properties>-->
+    <!--            <property name="searchAnnotations" value="true"/>-->
+    <!--        </properties>-->
+    <!--    </rule>-->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash" />
+    <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
+        <properties>
+            <property name="linesCountAfterOpeningBrace" value="0"/>
+            <property name="linesCountBeforeClosingBrace" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
+        <properties>
+            <property name="linesCountBeforeFirstContent" value="0"/>
+            <property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
+            <property name="linesCountBetweenDifferentAnnotationsTypes" value="1"/>
+            <property name="linesCountAfterLastContent" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Commenting.EmptyComment" />
+
+    <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration" />
+
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <severity>3</severity>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter" />
+
+</ruleset>
