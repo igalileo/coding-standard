@@ -1,0 +1,17 @@
+{
+    "name": "igalileo/coding-standard",
+    "description": "Galileo Corporation s.r.o. coding standard",
+    "type": "phpcodesniffer-standard",
+    "authors": [
+        {
+            "name": "Jiri Prochazka",
+            "email": "jiri.prochazka@igalileo.cz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "escapestudios/symfony2-coding-standard": "^3.12",
+        "slevomat/coding-standard": "^6.4",
+        "squizlabs/php_codesniffer": "^3.5"
+    }
+}
