@@ -9,8 +9,6 @@
     <rule ref="Symfony">
         <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterFirst" />
         <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterSecond" />
-        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
-        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
     </rule>
 
     <rule ref="Symfony">
@@ -23,10 +21,6 @@
     </rule>
 
     <rule ref="Symfony.ControlStructure.IdenticalComparison.Warning">
-        <type>warning</type>
-    </rule>
-
-    <rule ref="Symfony.Commenting.FunctionComment.Missing">
         <type>warning</type>
     </rule>
 
