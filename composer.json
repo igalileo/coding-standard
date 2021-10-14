@@ -2,6 +2,7 @@
     "name": "igalileo/coding-standard",
     "description": "Galileo Corporation s.r.o. coding standard",
     "type": "phpcodesniffer-standard",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jiri Prochazka",
