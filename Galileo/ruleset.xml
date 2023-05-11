@@ -9,16 +9,11 @@
     <rule ref="Symfony">
         <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterFirst" />
         <exclude name="Squiz.ControlStructures.ForLoopDeclaration.SpacingAfterSecond" />
-    </rule>
-
-    <rule ref="Symfony">
         <exclude name ="Squiz.Strings.ConcatenationSpacing" />
         <exclude name ="Symfony.Functions.Arguments.Invalid" />
+        <exclude name ="Symfony.ControlStructure.YodaConditions.Invalid" />
     </rule>
 
-    <rule ref="Symfony.ControlStructure.YodaConditions.Invalid">
-        <type>warning</type>
-    </rule>
 
     <rule ref="Symfony.ControlStructure.IdenticalComparison.Warning">
         <type>warning</type>
@@ -32,10 +27,6 @@
         <type>warning</type>
     </rule>
 
-    <!--    <rule ref="PSR12">-->
-    <!--        <exclude name="PSR12.Properties.ConstantVisibility" />-->
-    <!--    </rule>-->
-
     <rule ref="Generic.Files.LineLength">
         <properties>
             <property name="lineLimit" value="120"/>
@@ -43,12 +34,9 @@
         </properties>
     </rule>
 
-    <!--    <rule ref="PSR12">-->
-    <!--        <exclude name="PSR12.Properties.ConstantVisibility" />-->
-    <!--    </rule>-->
-
     <rule ref="Zend.NamingConventions.ValidVariableName.NotCamelCaps">
         <type>warning</type>
+        <severity>3</severity>
     </rule>
 
     <rule ref="Zend.NamingConventions.ValidVariableName.MemberVarNotCamelCaps">
@@ -57,7 +45,6 @@
 
 
     <!-- SLEVOMAT CODING STANDARD -->
-
     <!-- Arrays -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma" />
 <!--    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />-->
@@ -75,7 +62,9 @@
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
         <type>warning</type>
     </rule>
-<!--    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" />-->
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">
+        <type>warning</type>
+    </rule>
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
         <properties>
             <property name="linesCountAfterOpeningBrace" value="0"/>
@@ -187,6 +176,9 @@
         <type>warning</type>
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator" />-->
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison">
+        <type>warning</type>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn">
         <type>warning</type>
     </rule>
@@ -201,12 +193,12 @@
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
         <properties>
             <property name="rootNamespaces" type="array">
+                <element key="src" value="App"/>
                 <element key="src/gcm" value="GCM"/>
                 <element key="src/gcm/core" value="GCM\Core"/>
                 <element key="src/gcm/modules" value="GCM\Modules"/>
-                <element key="src/" value="App"/>
-                <element key="tests/" value="GCM\Tests"/>
-                <element key="tests/" value="App\Tests"/>
+                <element key="tests" value="App\Tests"/>
+                <element key="tests" value="GCM\Tests"/>
             </property>
         </properties>
         <type>warning</type>
