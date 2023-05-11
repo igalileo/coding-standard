@@ -62,9 +62,7 @@
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma" />
 <!--    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />-->
 <!--    <rule ref="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed" />-->
-    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement" />
 
     <!-- Classes -->
 <!--    <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing">-->
@@ -72,9 +70,7 @@
 <!--            <property name="linesCountBetweenMembers">1</property>-->
 <!--        </properties>-->
 <!--    </rule>-->
-    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure" />
 <!--    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" />-->
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
         <properties>
@@ -83,25 +79,13 @@
         </properties>
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.Classes.DisallowLateStaticBindingForConstants" />-->
-    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition" />
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition" />
 <!--    <rule ref="SlevomatCodingStandard.Classes.DisallowStringExpressionPropertyFetch" />-->
-    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference" />
+    <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing" />
+    <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration" />
 <!--    <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">-->
 <!--        <properties>-->
 <!--            <property name="linesCountBeforeFirstUse" value="0"/>-->
@@ -109,15 +93,11 @@
 <!--            <property name="linesCountAfterLastUse" value="1"/>-->
 <!--        </properties>-->
 <!--    </rule>-->
-    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding" />
 
     <!-- Commenting -->
 <!--    <rule ref="SlevomatCodingStandard.Commenting.AnnotationName" />-->
-    <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration" />
 <!--    <rule ref="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode" />-->
     <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
         <properties>
@@ -158,8 +138,9 @@
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit" />-->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty">
-        <type>warning</type>
+        <severity>3</severity>
     </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses" />
     <!-- <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison" /> -->
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
         <properties>
@@ -179,20 +160,11 @@
             </property>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses" />
-    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator" />
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator" />-->
-    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator" />
 
     <!-- Exceptions -->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch" />
@@ -209,30 +181,20 @@
                 <element key="tests/" value="App\Tests"/>
             </property>
         </properties>
-        <type>warning</type>
     </rule>
 
     <!-- Functions -->
-    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Functions.StaticClosure">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration" />
+    <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction" />
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosure" />
     <rule ref="SlevomatCodingStandard.Functions.UnusedParameter" />
-    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue" />
 
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse" />
     <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine" />
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias" />
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration" />
-    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile" />
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration" />
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing">
         <properties>
@@ -240,9 +202,7 @@
             <property name="linesCountAfterNamespace" value="1"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine" />
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">-->
 <!--        <properties>-->
 <!--            <property name="searchAnnotations" value="true"/>-->
@@ -253,9 +213,7 @@
         <properties>
             <property name="searchAnnotations" type="boolean" value="true"/>
         </properties>
-        <type>warning</type>
     </rule>
-    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
 
     <!-- PHP -->
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing">
@@ -264,9 +222,7 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc" />
-    <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking" />
     <rule ref="SlevomatCodingStandard.PHP.ShortList" />
     <rule ref="SlevomatCodingStandard.PHP.TypeCast" />
     <rule ref="SlevomatCodingStandard.PHP.UselessParentheses" />
@@ -281,32 +237,22 @@
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax" />-->
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint" />-->
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints" />
-    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition" />
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue" />
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint" />-->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing" />
-    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint" />
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHintSpacing" />-->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
-    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint" />
 
     <!-- Variables -->
     <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable">
         <type>warning</type>
     </rule>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable" />
-    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Variables.UselessVariable">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable" />
 
     <!-- Whitespaces -->
 <!--    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />-->
