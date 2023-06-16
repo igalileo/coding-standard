@@ -234,16 +234,6 @@
 
     <!-- Files -->
     <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
-        <properties>
-            <property name="rootNamespaces" type="array">
-                <element key="src" value="App"/>
-                <element key="src/gcm" value="GCM"/>
-                <element key="src/gcm/core" value="GCM\Core"/>
-                <element key="src/gcm/modules" value="GCM\Modules"/>
-                <element key="tests" value="App\Tests"/>
-                <element key="tests" value="GCM\Tests"/>
-            </property>
-        </properties>
         <type>warning</type>
     </rule>
 
