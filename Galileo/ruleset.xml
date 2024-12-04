@@ -61,7 +61,6 @@
 <!--        </properties>-->
 <!--    </rule>-->
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
-        <type>warning</type>
         <properties>
             <property name="groups" type="array">
                 <element value="uses"/>
@@ -104,9 +103,7 @@
         </properties>
     </rule>
 
-    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility" />
 
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
         <properties>
@@ -326,12 +323,8 @@
         <type>warning</type>
     </rule>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable" />
-    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
-        <type>warning</type>
-    </rule>
-    <rule ref="SlevomatCodingStandard.Variables.UselessVariable">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable" />
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable" />
 
     <!-- Whitespaces -->
 <!--    <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />-->
