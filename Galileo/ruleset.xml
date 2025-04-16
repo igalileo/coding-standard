@@ -272,9 +272,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint" />
 
     <!-- Variables -->
-    <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable">
-        <type>warning</type>
-    </rule>
+    <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable" />
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable" />
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable" />
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable" />
